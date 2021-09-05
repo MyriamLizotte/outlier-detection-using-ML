@@ -39,6 +39,8 @@ Apply the REPEN method (a machine learning method for outlier detection) to the 
 
 - (file) submit.sh: a submit script for SBATCH that calls REPEN.py
 
+- (file) outlier_example.R: a script to generate boxplot of a toy example of the impact of outliers
+
 ## REFERENCES
 	Pang, G., Cao, L., Chen, L., & Liu, H. (2018, July).
 	Learning representations of ultrahigh-dimensional data for random distance-based outlier detection.
