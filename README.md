@@ -1,10 +1,10 @@
 # Outlier Detection in High Dimension with Machine Learning
 Summer 2021 Project with Prof Celia Greenwood and Amadou Barry
 
-## GOAL
+## Goal
 Apply the REPEN method (a machine learning method for outlier detection) to the ABIDE dataset of neuroimaging data.
 
-## FILE STRUCTURE
+## File Structure
 - (directory) data: contains the data sets and the lower dimension representation
 	
    - (file) abide.csv: must be downloaded separately from http://fcon_1000.projects.nitrc.org/indi/abide/abide_I.html
@@ -37,11 +37,18 @@ Apply the REPEN method (a machine learning method for outlier detection) to the 
 
 - (file) utilities.py: contains helper functions used in REPEN.py
 
-- (file) submit.sh: a submit script for SBATCH that calls REPEN.py
+- (file) submit.sh: a submit script for SBATCH that calls REPEN.py and creates a virtual environment with the necessary packages.
 
 - (file) outlier_example.R: a script to generate boxplot of a toy example of the impact of outliers
 
-## REFERENCES
+## How to run
+1. Download the datasets and place into "data" folder. (For the AID362 dataset, must first convert from .arff to .csv format.)
+2. In REPEN.py, change the "filename" variable to the name of the dataset ("census", "AID362","abide").
+3. In the commandline, run the file "submit.sh".
+4. Check the results and plots in the "results" directory.
+
+
+## References
 	Pang, G., Cao, L., Chen, L., & Liu, H. (2018, July).
 	Learning representations of ultrahigh-dimensional data for random distance-based outlier detection.
 	In Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (pp. 2041-2050).
